@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "FocusTube - Productive Mode",
+    "version": "1.0.0",
+    "description": "Transform YouTube into a productivity powerhouse by blurring distracting content and highlighting educational videos.",
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "assets/logo.svg"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "icons": {
+        "128": "assets/logo.svg"
+    }
+}
