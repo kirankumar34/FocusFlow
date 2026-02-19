@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTube Popup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/logo.svg" alt="FocusTube Logo" class="logo">
+      <h1>Focus<span>Tube</span></h1>
+    </header>
+
+    <main>
+      <div class="glass-card">
+        <div class="status-row">
+          <div class="status-text">
+            <span class="label">Productive Mode</span>
+            <span id="current-state" class="state-off">Disabled</span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <p class="description">
+          Blurring distractions, highlighting learning. Focus on what matters.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="accent-line"></div>
+      <p>Designed for Deep Work</p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
